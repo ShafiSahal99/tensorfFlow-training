@@ -75,5 +75,5 @@ model.compile(
 )
 print(model.model().summary())
 model.fit(x_train, y_train, batch_size=64, epochs=3)
-
+model.save('pretrained/')
 model.evaluate(x_test, y_test, batch_size=64)
