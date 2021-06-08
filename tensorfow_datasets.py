@@ -17,7 +17,7 @@ import tensorflow_datasets as tfds
 )
 
 
-""" def normalize_image(image, label):
+ def normalize_image(image, label):
     return tf.cast(image, tf.float32) / 255.0, label
 
 
@@ -47,7 +47,7 @@ model.compile(
 )
 
 model.fit(ds_train, epochs=5)
-model.evaluate(ds_test) """
+model.evaluate(ds_test)
 
 (ds_train, ds_test), ds_info = tfds.load(
     'imdb_reviews',
